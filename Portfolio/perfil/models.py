@@ -19,7 +19,7 @@ class Experiencia(models.Model):
         return "{0} en {1}".format(self.puesto, self.lugar)
 
 class Formacion(models.Model):
-    formacion = models.CharField(verbose_name = "Formación recibida", max_length=50)
+    formacion = models.TextField(verbose_name = "Formación recibida", max_length=300)
     ano = models.CharField(verbose_name = "año/s de realización", max_length=10)
     lugar = models.CharField (verbose_name= "Lugar de realización", max_length=50)
     creado = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
@@ -34,7 +34,7 @@ class Formacion(models.Model):
         return "{0} en {1} [{2}]".format(self.formacion, self.lugar, self.ano)
 
 class DatosDeInteres(models.Model):
-    dato = models.CharField(verbose_name = "Dato de interes", max_length=50)
+    dato = models.CharField(verbose_name = "Dato de interes", max_length=80)
 
     class Meta:
         verbose_name = "dato de interes"
