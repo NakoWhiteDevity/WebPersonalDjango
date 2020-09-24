@@ -1,0 +1,105 @@
+$margendefecto : 10px
+$borderadiodefecto : 10px
+$fondocontainerdefecto : #8EA604
+$fondobodydefecto : #D76A03
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 16px
+    color: #000000
+    font-family: 'Montserrat', sans-serif
+
+body
+    background-color: lightgrey
+p
+    margin: 0px
+
+
+/* PARTE COMUN */
+.cbot
+    min-height: 650px
+body
+    background-position: center
+    background-size: 100%
+    background-repeat: no-repeat
+    background-size: cover
+.texto, span
+    text-align: justify
+    justify-content: center
+    font-weight: 500
+    line-height: 180%
+    font-size: 1.2rem
+.identado
+    text-indent: 15%
+.portada
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 0px
+    height: 350px
+    background-position: center
+    background-size: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    h1,h2
+        color: white
+    h1
+        font-size: 2rem
+    h2
+        font-size: 1rem
+    a
+        div
+            color: white
+    .nyr
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        position: relative
+        font-family: 'Montserrat', sans-serif
+        .bordenyr
+            border: 2px solid white
+            border-radius: $borderadiodefecto
+            padding: 20px
+    .menu
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap-reverse
+        justify-content: space-between
+        font-family: 'Montserrat', sans-serif
+        align-items: baseline
+        div
+            padding: 10px 20px
+        a
+            text-decoration: none
+        .intraweb
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            font-weight: 800
+        .rrss
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            div
+                padding: 10px
+    .menu2
+        justify-content: space-around
+        display: none
+
+.intraweb
+    .activo
+        border-bottom: 3px solid white
+        position: relative
+        bottom: 10px
+    div:hover
+        transition: all 0.3s ease
+        color: cyan
+.rrss
+    i:hover
+        transition: all 0.3s ease
+        color: magenta

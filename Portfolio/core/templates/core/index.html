@@ -1,0 +1,17 @@
+{% extends 'core/comun.html' %}
+{% block titulo %}Sobre mi{% endblock titulo %}
+{% block fondo %}{% load static %}{% static 'core/img/sobremi.jpg' %}{% endblock fondo %}
+{% block activosobremi %}activo{% endblock activosobremi %}
+{% block contenido %}
+{% load static %}
+<!-- PARTE NO COMUN -->
+<!-- Sobre mi-->
+    <div class="container cbot sobremi">
+        <div class="row">
+            <!-- LA FOTO ES DE 180x320 -->
+            <div class="col-md-12 col-lg-3 foto dato"><img src="{{PRE_FOTO.url}}"/></div>
+            <div class="col-md-12 col-lg-9 texto dato"><p class="texto identado">{{PRE_TEXTO|linebreaks}}</p></div>
+        </div>
+    </div>
+<!-- /PARTE NO COMUN -->
+{% endblock contenido %}

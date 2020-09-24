@@ -1,0 +1,42 @@
+{% extends 'core/comun.html' %}
+{% block titulo %}Trabajos{% endblock titulo %}
+{% block fondo %}{% load static %}{% static 'core/img/trabajos.jpg' %}{% endblock fondo %}
+{% block activotrabajos%}activo{% endblock activotrabajos %}
+{% block contenido %}
+{% load static %}
+<!-- PARTE NO COMUN -->
+<!-- Trabajos -->
+<div class="container cbot trabajos">
+<div class="row d-flex align-items-center justify-content-center">
+    
+    {% for trabajo in trabajos %}
+    <!-- CARTA DE TRABAJO -->
+    <div class="col-10 jobcard">
+        <div class="fototrabajo"><img src="{{trabajo.foto.url}}"/></div>
+        <div class="datostrabajo">
+            <div class="proyecto">
+                {{trabajo.nombre}}
+                {% if trabajo.fechafin %}
+                    ({{trabajo.fechafin|date:"m/Y"}})
+                {% endif %}
+            </div>
+            <div class="autor">{{trabajo.autor}}</div>
+            <div class="acceso">
+                {% if trabajo.enlace != "http://www.cmfg.es" %}
+                    <a href="{{trabajo.enlace}}">Acceder al proyecto</a>
+                {% elif trabajo.enlace == "http://www.cmfg.es" %}
+
+                {% else %}
+                    En desarrollo
+                {% endif %}
+            </div>
+            <div class="descripcion"><p>{{trabajo.descripcion|linebreaks}}</p></div>
+        </div>
+    </div>
+    <!-- /CARTA DE TRABAJO -->
+    {% endfor %}
+
+</div>
+</div>
+{% endblock contenido %}
+

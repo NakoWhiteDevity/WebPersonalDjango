@@ -1,0 +1,77 @@
+{% extends 'core/comun.html' %}
+{% block titulo %}Perfil{% endblock titulo %}
+{% block fondo %}{% load static %}{% static 'core/img/perfil.jpg' %}{% endblock fondo %}
+{% block activoperfil%}activo{% endblock activoperfil %}
+{% block contenido %}
+<!-- PARTE NO COMUN -->
+<!-- PERFIL PROFESIONAL -->
+<div class="container cbot perfilprofesional">
+
+    <div class="row">
+        <div class="col-sm-12 col-lg-6 experiencia">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center texto"><p>Experiencia profesional</p></div>
+            </div>
+            <div class="row">
+            
+            {% for experiencia in experiencias reversed %}
+            <!-- <TARJETA DE EXPERIENCIA> -->
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="expcard">
+                        <div class="datos">
+                            <div class="puesto">{{experiencia.puesto}}</div>
+                            <div class="ano">{{experiencia.ano}}</div>
+                            <div class="duracion">{{experiencia.duracion}}</div>
+                            <div class="lugar">{{experiencia.lugar}}</div>
+                        </div>
+                        <div class="tareas">
+                            <p>{{experiencia.tareas|linebreaks}}</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- </TARJETA DE EXPERIENCIA> -->
+            {% endfor %}
+            
+            </div>
+        </div>
+        
+        <div class="col-sm-12 col-lg-6 formacion">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center texto"><p>Formación académica</p></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                
+                {% for formacion in formaciones reversed %}
+                <!-- <TARJETA DE FORMACION> -->
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="forcard">
+                            <div class="datos">
+                                <div class="formacion">{{formacion.formacion}}</div>
+                                <div class="duracion">{{formacion.ano}}</div>
+                                <div class="lugar">{{formacion.lugar}}</div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </TARJETA DE FORMACION> -->
+                {% endfor %}
+                
+                <div class="row datosdeinteres d-flex justify-content-around">
+                    <div class="col-12 texto"><p>Datos de interes</p></div>
+                    
+                    {% for dato in datos %}
+                    <!-- TARJETA DE DATO -->
+                        <div class="col-5 datoentrada">{{dato.dato}}</div>
+                    <!-- /TARJETA DE DATO -->
+                    {% endfor %}
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /PARTE NO COMUN -->
+{% endblock contenido %}
+

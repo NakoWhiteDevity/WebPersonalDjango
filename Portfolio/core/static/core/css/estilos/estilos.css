@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+p {
+  margin: 0px;
+}
+
+/* PARTE COMUN */
+.cbot {
+  min-height: 650px;
+}
+
+body {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto, span {
+  text-align: justify;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 1.2rem;
+}
+
+.identado {
+  text-indent: 15%;
+}
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  height: 350px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portada h1, .portada h2 {
+  color: white;
+}
+.portada h1 {
+  font-size: 2rem;
+}
+.portada h2 {
+  font-size: 1rem;
+}
+.portada a div {
+  color: white;
+}
+.portada .nyr {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.portada .nyr .bordenyr {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.portada .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  align-items: baseline;
+}
+.portada .menu div {
+  padding: 10px 20px;
+}
+.portada .menu a {
+  text-decoration: none;
+}
+.portada .menu .intraweb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-weight: 800;
+}
+.portada .menu .rrss {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.portada .menu .rrss div {
+  padding: 10px;
+}
+.portada .menu2 {
+  justify-content: space-around;
+  display: none;
+}
+
+.intraweb .activo {
+  border-bottom: 3px solid white;
+  position: relative;
+  bottom: 10px;
+}
+.intraweb div:hover {
+  transition: all 0.3s ease;
+  color: cyan;
+}
+
+.rrss i:hover {
+  transition: all 0.3s ease;
+  color: magenta;
+}
+
+/* CONTACTO */
+.contacto {
+  background-color: white;
+  padding: 30px;
+}
+
+textarea {
+  min-height: 250px;
+  resize: none;
+}
+
+.boton {
+  padding: 10px;
+}
+
+.btn {
+  background-color: grey;
+}
+
+/*SOBRE MI*/
+.sobremi {
+  background-color: white;
+  padding: 30px;
+}
+.sobremi p {
+  text-indent: 15%;
+  font-size: 1.2rem;
+}
+.sobremi .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.sobremi .row .foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobremi .row .foto img {
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 50px;
+}
+
+/* PERFIL PROFESIONAL */
+.perfilprofesional {
+  background-color: white;
+  padding: 30px;
+}
+.perfilprofesional .texto {
+  margin: 20px 0px;
+}
+.perfilprofesional .texto p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.perfilprofesional .datoentrada {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.perfilprofesional .expcard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px 0px;
+}
+.perfilprofesional .expcard .datos {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.perfilprofesional .expcard .datos .puesto {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.perfilprofesional .expcard .datos .ano {
+  width: 25%;
+}
+.perfilprofesional .expcard .datos .duracion {
+  width: 25%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.perfilprofesional .expcard .datos .lugar {
+  width: 50%;
+}
+.perfilprofesional .expcard .tareas {
+  text-align: justify;
+  margin: 10px 0px;
+}
+.perfilprofesional .expcard .tareas p {
+  margin: 0px;
+  padding: 0px;
+}
+.perfilprofesional .forcard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px 0px;
+}
+.perfilprofesional .forcard .datos {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.perfilprofesional .forcard .datos .formacion {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.perfilprofesional .forcard .datos .duracion {
+  width: 30%;
+  border-right: 1px solid black;
+}
+.perfilprofesional .forcard .datos .lugar {
+  width: 70%;
+}
+.perfilprofesional .forcard .tareas {
+  text-align: justify;
+  margin: 10px 0px;
+}
+.perfilprofesional .forcard .tareas p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.8rem;
+}
+.perfilprofesional .datosdeinteres {
+  margin-top: 20px;
+}
+.perfilprofesional .datosdeinteres .col-12 {
+  text-align: center;
+}
+.perfilprofesional .datosdeinteres .datoentrada {
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* TRABAJOS */
+.trabajos {
+  background-color: white;
+  padding: 30px;
+}
+.trabajos i {
+  margin: 0px 10px;
+}
+.trabajos .descripcion {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.trabajos .jobcard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.trabajos .jobcard .fototrabajo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+}
+.trabajos .jobcard .datostrabajo {
+  width: 78%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trabajos .jobcard .datostrabajo .proyecto {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trabajos .jobcard .datostrabajo .autor {
+  width: 50%;
+  border-right: 1px solid black;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trabajos .jobcard .datostrabajo .acceso {
+  width: 50%;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.trabajos .jobcard .datostrabajo .descripcion {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVIDADES */
+/* LEY POR ENCIMA DEL 768 */
+@media screen and (min-width: 768px) {
+  .menu i {
+    font-size: 1.6rem;
+    color: white;
+  }
+}
+/* LEY POR DEBAJO DEL 768 */
+@media screen and (max-width: 768px) {
+  .col-md-3 {
+    margin: auto;
+  }
+
+  .nyr {
+    margin: 0px 20px;
+  }
+
+  .intraweb {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .rrss {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .menu i {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .fototrabajo img {
+    display: none;
+  }
+
+  .datostrabajo {
+    min-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
