@@ -25,7 +25,7 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cmfg.dev','www.cmfg.dev','192.168.1.111']
+ALLOWED_HOSTS = ['cmfg.dev','www.cmfg.dev']
 
 
 # Application definition
